@@ -277,7 +277,9 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     elevation: 5,
     width: 30,
-    height: 30
+    height: 30,
+    borderWidth: 1,
+    borderColor: '#FFFFFF'
   },
   iconLogo: {
     resizeMode: "cover",

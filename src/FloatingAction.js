@@ -658,7 +658,9 @@ const styles = StyleSheet.create({
     height: ACTION_BUTTON_SIZE,
     flex: 1,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    borderWidth: 1,
+    borderColor: '#FFFFFF'
   }
 });
 
