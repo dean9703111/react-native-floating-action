@@ -18,7 +18,7 @@ import { isIphoneX } from "./utils/platform";
 import { getTouchableComponent, getRippleProps } from "./utils/touchable";
 
 const DEVICE_WIDTH = Dimensions.get("window").width;
-const ACTION_BUTTON_SIZE = 56;
+const ACTION_BUTTON_SIZE = 45;
 
 const DEFAULT_SHADOW_PROPS = {
   shadowOpacity: 0.35,
@@ -191,7 +191,7 @@ class FloatingAction extends Component {
       );
     }
 
-    return <AddIcon width={iconWidth} height={iconHeight} backgroundColor={iconColor}  />;
+    return <AddIcon width={iconWidth} height={iconHeight} backgroundColor={iconColor} />;
   };
 
   reset = () => {

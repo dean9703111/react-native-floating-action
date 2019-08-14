@@ -274,21 +274,21 @@ const styles = StyleSheet.create({
   button: {
     alignItems: "center",
     justifyContent: "center",
-    borderRadius: 20,
+    borderRadius: 15,
     elevation: 5,
-    width: 40,
-    height: 40
+    width: 30,
+    height: 30
   },
   iconLogo: {
     resizeMode: "cover",
-    width: 40,
-    height: 40,
-    borderRadius: 20
+    width: 30,
+    height: 30,
+    borderRadius: 15
   },
   icon: {
     resizeMode: "contain",
-    width: 20,
-    height: 20
+    width: 15,
+    height: 15
   }
 });
 
