@@ -39,13 +39,13 @@ class FloatingAction extends Component {
     };
 
     this.mainBottomAnimation = new Animated.Value(
-      props.distanceToEdge + props.mainVerticalDistance
+      props.distanceToEdge + props.mainVerticalDistance + 46
     );
     this.actionsBottomAnimation = new Animated.Value(
       ACTION_BUTTON_SIZE +
-        props.distanceToEdge +
-        props.actionsPaddingTopBottom +
-        props.mainVerticalDistance
+      props.distanceToEdge +
+      props.actionsPaddingTopBottom +
+      props.mainVerticalDistance + 46
     );
     this.animation = new Animated.Value(0);
     this.actionsAnimation = new Animated.Value(0);
@@ -120,12 +120,12 @@ class FloatingAction extends Component {
           distanceToEdge +
           actionsPaddingTopBottom +
           height -
-          (isIphoneX() ? 40 : 0) - 42,
+          (isIphoneX() ? 40 : 0),
         duration: 250
       }),
       Animated.spring(this.mainBottomAnimation, {
         bounciness: 0,
-        toValue: distanceToEdge + height - (isIphoneX() ? 40 : 0) - 42,
+        toValue: distanceToEdge + height - (isIphoneX() ? 40 : 0),
         duration: 250
       })
     ]).start();
