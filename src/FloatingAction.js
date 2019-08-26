@@ -120,12 +120,12 @@ class FloatingAction extends Component {
           distanceToEdge +
           actionsPaddingTopBottom +
           height -
-          (isIphoneX() ? 40 : 0),
+          (isIphoneX() ? 86 : 0),
         duration: 250
       }),
       Animated.spring(this.mainBottomAnimation, {
         bounciness: 0,
-        toValue: distanceToEdge + height - (isIphoneX() ? 40 : 0),
+        toValue: distanceToEdge + height - (isIphoneX() ? 86 : 0),
         duration: 250
       })
     ]).start();
