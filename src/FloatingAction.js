@@ -414,6 +414,7 @@ class FloatingAction extends Component {
           style={styles.button}
           activeOpacity={0.85}
           onPress={this.animateButton}
+          delayLongPress={2500}
           onLongPress={onLongPressMain(true)}
           onPressOut={onLongPressMain(false)}
         >
