@@ -7,9 +7,9 @@ import {
 import { shadeColor } from "./color";
 
 export function getTouchableComponent(useNativeFeedback = true) {
-  if (useNativeFeedback === true && Platform.OS === "android") {
-    return TouchableNativeFeedback;
-  }
+  // if (useNativeFeedback === true && Platform.OS === "android") {
+  //   return TouchableNativeFeedback;
+  // }
   return TouchableOpacity;
 }
 
