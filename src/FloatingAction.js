@@ -316,7 +316,8 @@ class FloatingAction extends Component {
       position,
       overrideWithAction,
       distanceToEdge,
-      animated
+      animated,
+      onLongPressMain
     } = this.props;
     const { active } = this.state;
 
@@ -413,8 +414,8 @@ class FloatingAction extends Component {
           style={styles.button}
           activeOpacity={0.85}
           onPress={this.animateButton}
-          onLongPress={this.onLongPressMain(true)}
-          onPressOut={this.onLongPressMain(false)}
+          onLongPress={onLongPressMain(true)}
+          onPressOut={onLongPressMain(false)}
         >
           <Animated.View
             style={[styles.buttonTextContainer, animatedViewStyle]}
@@ -569,7 +570,7 @@ FloatingAction.propTypes = {
   }),
   onPressItem: PropTypes.func,
   onPressMain: PropTypes.func,
-  onLongPressMain: PropTypes.bool,
+  onLongPressMain: PropTypes.func,
   onClose: PropTypes.func,
   onOpen: PropTypes.func,
   onPressBackdrop: PropTypes.func,
